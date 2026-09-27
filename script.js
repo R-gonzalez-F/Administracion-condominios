@@ -47,7 +47,7 @@ if (formContacto) {
     }
 
     try {
-      await fetch('http://localhost:3000/api/contacto', {
+      await fetch('https://backend-condominios-ui4k.onrender.com/api/contacto', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ nombre, condominio, destinatario, mensaje })
